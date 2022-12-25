@@ -11,6 +11,7 @@ RUN apt-get update -qq \
 ADD maps_ball4.zip /tmp/maps_ball4.zip
 
 RUN unzip /tmp/maps_ball4.zip -d /usr/local/altitude/lib/app/maps/
+RUN rm /tmp/maps_ball4.zip
 # /usr/local/altitude/lib/app/maps/
 
 WORKDIR /usr/local/altitude/bin
